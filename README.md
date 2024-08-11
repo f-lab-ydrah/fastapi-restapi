@@ -7,6 +7,22 @@
 python 3.10.0
 
 fastapi 0.0.4
+
+uvicorn 0.30.1
+
+pydantic 2.7.4
+
+sqlalchemy 2.0.31
+
+black 24.4.2
+
+isort 5.10.1
+
+pycln 2.4.0
+
+passlib 1.7.4
+
+jose 3.3.0
 ***
  
 ### - install ###
