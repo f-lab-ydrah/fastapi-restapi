@@ -85,13 +85,13 @@ OAuth2 기반의 로그인 엔드포인트를 구현하였습니다.
 
 #### 계층도 ####
 ```mermaid
-flowchart TD
-    A[client Request] --> B[endpoints.py]
-    B[endpoints.py] --> C[service.py]
-    C[service.py] --> D[JWT Token]
-    C[service.py] --> E[Database]
-    E[Database] --> C[service.py]
-    D[JWT Token] --> A[client Request] 
+   flowchart TD
+       A[client Request] --> B[endpoints.py]
+       B[endpoints.py] --> C[service.py]
+       C[service.py] --> D[JWT Token]
+       C[service.py] --> E[Database]
+       E[Database] --> C[service.py]
+       D[JWT Token] --> A[client Request] 
 '''
 
 
