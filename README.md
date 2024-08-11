@@ -93,6 +93,7 @@ flowchart TD
     E --> C
     C --> |response|A
 ```
+
 ```mermaid
 flowchart TD
     A[Client Request] -->|POST| B(/posts)
