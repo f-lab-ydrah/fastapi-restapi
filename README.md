@@ -79,6 +79,10 @@ RequestPost 모델 타입의 post 매개변수를 입력으로 받고
 JSON 형식의 데이터를 파싱하여 RequestPost 모델로 변환합니다.
 게시글은 딕셔너리에 저장되며 키는 id_counter, 값은 ResponsePost 객체입니다.
 
+OAuth2 기반의 로그인 엔드포인트를 구현하였습니다.
+사용자가 로그인을 시도하면, 사용자 ID과 비밀번호를 확인한 후 JWT 액세스 토큰을 발급하고,
+유니크한 세션 ID를 생성하여 쿠키에 저장합니다.
+
 #### 계층도 ####
 ```mermaid
 graph TD;
