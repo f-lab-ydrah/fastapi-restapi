@@ -92,7 +92,19 @@ flowchart TD
     D --> E[fa:fa-database sqlite]
     E --> C
     C --> |response|A
+
+
+
+flowchart TD
+    A[Client Request] -->|POST| B(/posts)
+    B --> C[endpoints.py]
+    C --> D[service.py]
+    D --> E[fa:fa-database sqlite]
+    E --> C
+    C --> |response|A
 ```
+
+
 
 * * *
 ![post](https://github.com/f-lab-edu/fastapi-restapi/assets/74363678/44da76a1-a408-4b1c-ba89-eddd8bfeedd7)
