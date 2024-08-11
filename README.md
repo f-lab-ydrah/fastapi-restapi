@@ -92,8 +92,7 @@ OAuth2 기반의 로그인 엔드포인트를 구현하였습니다.
        C[service.py] --> E[Database]
        E[Database] --> C[service.py]
        D[JWT Token] --> A[client Request] 
-'''
-
+```
 
 * * *
 ![post](https://github.com/f-lab-edu/fastapi-restapi/assets/74363678/44da76a1-a408-4b1c-ba89-eddd8bfeedd7)
