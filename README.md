@@ -85,10 +85,13 @@ OAuth2 기반의 로그인 엔드포인트를 구현하였습니다.
 
 #### 계층도 ####
 ```mermaid
-graph TD;
-    api-->service;
-    service-->domain;
-    domain-->DB;
+flowchart TD
+    A[Client Request] -->|request| B(/token)
+    B --> C[endpoints.py]
+    C --> D[service.py]
+    D --> E[fa:fa-database sqlite]
+    E --> C
+    C --> |response|A
 ```
 
 * * *
