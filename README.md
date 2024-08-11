@@ -92,9 +92,8 @@ flowchart TD
     D --> E[fa:fa-database sqlite]
     E --> C
     C --> |response|A
-
-
-
+```
+```mermaid
 flowchart TD
     A[Client Request] -->|POST| B(/posts)
     B --> C[endpoints.py]
@@ -102,8 +101,7 @@ flowchart TD
     D --> E[fa:fa-database sqlite]
     E --> C
     C --> |response|A
-```
-
+'''
 
 
 * * *
