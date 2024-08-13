@@ -1,55 +1,44 @@
-   # FastAPI로 게시글 REST API 서버 구현하기 #
+```
+TODO: 아래 수정된 거 맞춰서 나머지도 수정해보세요.
+```
 
-## FastAPI로 게시글 생성 및 조회, 수정 삭제가 가능한 엔드포인트를 구현하였습니다. ##
+# FastAPI로 게시글 REST API 서버 구현하기
 
-***
-#### requirements ####
-python 3.10.0
-
-fastapi 0.0.4
-
-uvicorn 0.30.1
-
-pydantic 2.7.4
-
-sqlalchemy 2.0.31
-
-black 24.4.2
-
-isort 5.10.1
-
-pycln 2.4.0
-
-passlib 1.7.4
-
-jose 3.3.0
-***
+## FastAPI로 게시글 생성 및 조회, 수정 삭제가 가능한 엔드포인트를 구현하였습니다.
  
-### - install ###
-window OS 를 사용하는 PC에 대한 install 방법입니다.
+### Pre-requisite
 
-#### pyenv-win 설치 ####
-```
-    Invoke-WebRequest -UseBasicParsing -Uri https://pyenv.run | Invoke-Expression
-```
+#### Python
 
-#### python 버전 설치 및 설정 ####
-```
-    pyenv install 3.10.0
-    pyenv global 3.10.0
-```
+python >= 3.10.0
 
-#### poetry 설치 ####
-```
-    (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
+#### pyenv-win 설치
+
+> window OS 를 사용하는 PC에 대한 install 방법입니다.
+
+```bash
+Invoke-WebRequest -UseBasicParsing -Uri https://pyenv.run | Invoke-Expression
 ```
 
-#### Poetry 프로젝트 초기화 ####
+#### python 버전 설치 및 설정
+
+```bash
+pyenv install 3.10.0
+pyenv shell 3.10.0
+```
+
+#### poetry 설치
+
+```
+(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
+```
+
+#### Poetry 프로젝트 초기화
 ```
     poetry init --no-interaction
 ```
 
-#### FastAPI 및 Uvicorn 설치 ####
+#### FastAPI 및 Uvicorn 설치
 ```
     poetry add fastapi uvicorn
 ```
